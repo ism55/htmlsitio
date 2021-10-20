@@ -1,0 +1,66 @@
+.pulgadas {
+  font-size: 0.5in;
+  background-color: lightblue;
+}
+
+.centrimetros {
+  font-size: 1cm;
+  background-color: lightcoral;
+}
+
+.milimetros {
+  font-size: 1mm;
+  background-color: lightcyan;
+}
+
+.pixeles {
+  font-size: 10px;
+}
+
+.picas {
+  font-size: 2pc;
+  background-color: lightpink;
+}
+
+.puntos {
+  font-size: 50pt;
+  background-color: lightskyblue;
+}
+
+.ems {
+  font-size: 1.5em;
+  background-color: lightsteelblue;
+}
+
+.exs {
+  font-size: 3ex;
+  background-color: lightyellow;
+}
+.porcentajes {
+  font-size: 150%;
+  background-color: lightslategrey;
+}
+
+div {
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  width: 200px;
+  height: 200px;
+  padding: 20px 20px 20px 20px;
+  border: 2px black solid /*medida color estilo*/;
+  box-shadow: -20px 20px 0.9em gray /*offset-x offset-y blur color*/;
+  background: linear-gradient(
+    to bottom right,
+    #03045e,
+    #0096c7,
+    #48cae4,
+    #caf0f8
+  );
+  color: white;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}

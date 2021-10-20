@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de estilos</title>
+
+    
+    <link rel="stylesheet" href="./estilos/styles.css">
+
+
+    <style>
+      
+        /* Esto un comentario */ 
+      
+        /* RESET */ 
+       /* 
+         * { 
+             margin:0;
+             padding: 0;
+         }
+         */
+  /*
+         h1 { color: red;}
+         h2 {color:blue;}
+         h3 {color:red;}
+         h4 {color:blue;}
+         h5 {color:purple;}
+         */
+  /*
+         h1,h3 {
+             color:red;
+         }
+  
+         h2, h4{
+             color:blue;
+         }
+  
+         h5{
+             color:purple;
+         }
+  */
+    
+          /* Selector de clase */
+  
+          /*
+          .claserojo {
+              color: red;
+          }
+  
+          .claseazul {
+              color:blue;
+          }
+  
+          .clasemorado {
+              color:purple;
+          }
+  */
+  
+          /* SELECTOR DESCENDIENTE */
+          /*
+          p span{
+              color: rgb(48, 255, 21);
+          }
+  */
+  
+  /* SELECTOR HIJO*/
+  /*        
+  div > span{
+      color: red;
+  }
+    */
+    
+    /* SELECTORES CON CLASE + HIJOS O DESCENDIENTES*/
+    /*
+    .caja1 > p {
+        color: red;
+    }
+    */
+  /*
+    .caja1  p {
+        color: red;
+    }
+  */
+  
+  #titulo {
+      color: blue;
+  }
+/*
+  div.caja1{
+      color: red;
+  }*/
+/*
+  div.claseazul{
+      color:blue;
+  }
+*/
+
+/*
+  div .claseazul{
+      color:blue;
+  }
+*/
+
+/*
+  div > .claseazul{
+      color:blue;
+  }
+*/
+
+
+
+
+/*
+  div.claseazul{
+      color:blue;
+  }
+*/
+  h1#titulo{
+      color: yellow;
+  }
+
+
+  /*
+
+  p {
+      color: red !important;
+  }
+
+  p {
+      color: yellow;
+  }
+*/
+  body * div>h3 {
+  color : red  ;
+}
+  
+      </style>
+</head>
+<body>
+    <!--    Diferencia entre clase (class) y etiqueta (id)   -->
+        <!-- Clase -->
+    
+        <section>
+            <h3>Este H3 no se resalta</h3>
+            <div>
+                <h3>Este H3 sí se resalta</h3>
+            </div>
+            <h1 class="claserojo">Título del texto</h1>
+            <h2 class="claseazul"> subtítulo h2</h2>
+            <h3 class="claserojo">subtítulo h3</h3>
+            <h4 class="claseazul">subtítulo h4</h4>
+            <h5 class="clasemorado">subtítulo h5</h5>
+            <p class="clasemorada">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ab deleniti sint. Autem iste repudiandae, placeat animi omnis, perspiciatis non doloribus et temporibus aspernatur cumque numquam, voluptate deleniti repellat fugiat.</p>
+            <p class="clasemorada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci excepturi alias aliquid numquam illo eveniet culpa possimus omnis minus error eaque labore, in perferendis, delectus corporis aspernatur. Illo, fugit fuga!</p>
+            
+           <span class="clasemorada">Esto es una línea <h3>Este H3 no se resalta</h3></span>
+        </section>
+        
+        
+        <!-- id -->
+        <h1 id="titulo">Título del texto</h1>
+
+        <p class="claseazul"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem a blanditiis sed nemo doloremque, eligendi id optio iste itaque eveniet autem odit, repellat vel, labore illo similique vero sint!</p>
+    
+    
+    
+
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatibus accusantium quia enim quo optio, aut, 
+            <span> <h3>Este H3 no se resalta</h3> possimus necessitatibus libero dignissimos incidunt </span> 
+            eos assumenda quasi dicta perferendis eveniet repellendus, 
+            veniam ut excepturi.
+
+        </p>
+    
+        <div class="caja1">
+            <div class="caja2">
+                <p class="claseazul">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet asperiores esse ut debitis impedit iusto atque nobis vel nemo deserunt aperiam veniam, praesentium nulla non reiciendis sit? Assumenda, quisquam. Voluptates!</p>
+                <p>Lorem ipsum <span>Este también</span> dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <p class="claseazul"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga iusto quia minima nam possimus numquam molestiae earum incidunt! Odit eum architecto atque at repudiandae tempora ex tempore dignissimos veniam animi?</p>
+            <p>Lorem <span>Este se resalta <h3>Este H3 no se resalta</h3></span>  consectetur adipisicing elit. Alias eum velit exercitationem tempora distinctio? Vero debitis, reprehenderit ducimus modi odio, itaque totam, ullam maxime a qui excepturi delectus quae porro?</p>
+            <span> Este no esta dentro de un parrafo</span>
+        </div>
+    
+        <div>
+            Parrafo 1
+            <p>
+                Parrafo 2
+                <span>Elemento resaltado <h3>Este H3 no se resalta</h3></span>
+            </p>
+        </div>
+
+    </body>
+</html>

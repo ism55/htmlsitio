@@ -1,0 +1,132 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.padre {
+  position: relative;
+  margin-top: 50px;
+  background-color: coral;
+  width: 500px;
+  height: 500px;
+  left: 200px;
+}
+
+.hijo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: darkgreen;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  display: inline;
+}
+
+.nieto {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: beige;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+}
+
+.uno {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  color: black;
+  margin: 0 auto;
+}
+.dos {
+  float: left;
+
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  color: black;
+  margin: 0 auto;
+}
+
+.tres {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  color: black;
+  margin: 0 auto;
+}
+
+.cuatro {
+  width: 100px;
+  height: 100px;
+  background-color: lightsteelblue;
+  color: black;
+  margin: 0 auto;
+  clear: both;
+  float: left;
+}
+
+.cinco {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  color: black;
+  margin: 0 auto;
+}
+.disp {
+  clear: both;
+  display: inline-block;
+  background-color: maroon;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.parrafo {
+  display: inline-block;
+  background-color: maroon;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #264653, #2a9d8f);
+  padding: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  background: linear-gradient(to bottom, #2a9d8f, #264653);
+}
+a:hover {
+  color: orange;
+}
+
+a:link {
+}
+
+a:visited {
+  color: green;
+}
+
+li a:active {
+  color: red;
+}
+
+.padre2 :nth-child(3) {
+  color: orange;
+}

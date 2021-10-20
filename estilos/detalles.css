@@ -1,0 +1,91 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: lightgray;
+}
+
+.container {
+  background: gray;
+  width: 400px;
+  padding: 50px 50px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  top: 50px;
+}
+
+.container div {
+  border: 2px black solid;
+  width: 80px;
+  padding: 10px 10px;
+}
+
+#uno {
+  background: mediumaquamarine;
+  float: left;
+}
+
+#dos {
+  background: mediumvioletred;
+  float: left;
+}
+
+#tres {
+  background: mediumorchid;
+  float: left;
+}
+
+#cuatro {
+  background: mediumpurple;
+  clear: left;
+  float: left;
+}
+
+#cinco {
+  background: mediumslateblue;
+  float: left;
+}
+
+nav {
+  position: fixed;
+  left: 200px;
+  top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: rgb(79, 255, 25);
+}
+
+a:active {
+  color: yellow;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul li {
+  float: left;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(to bottom, #0105ff, #0096c7, #48cae4, #caf0f8);
+}
+
+ul li:hover {
+  opacity: 0.8;
+}
